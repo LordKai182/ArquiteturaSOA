@@ -1,0 +1,1836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F6D89B9-D85A-465D-B08D-0167882A68A0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASArquiteruraData</RootNamespace>
+    <AssemblyName>ASArquiteruraData</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Users\HENRIQUE1337\Desktop\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\ArquiteruraASA - Copia\ArquiteruraASA\Frameworks\ArquiteturaTesteASA\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="system.data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel.DomainServices.EntityFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataContextInterface\IASAEntities.cs" />
+    <Compile Include="DataContext\ASAEntities.cs" />
+    <Compile Include="GenericRepositoryInterface\IRepository.cs" />
+    <Compile Include="GenericRepository\EntitySetDictionary.cs" />
+    <Compile Include="GenericRepository\Itb_abertura_caixaRepository.cs" />
+    <Compile Include="GenericRepository\Repository.cs" />
+    <Compile Include="Mobile_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PromocaoUneg2_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_agenda_produtoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\ItbManagerUpdateRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_abcfarma_ufRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_convenio_clienteRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_convenio_finalizadora_subRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_convenio_unRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_dicionario_produtoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_dicionario_unRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_dpto_aplicativoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_ecf_finalizadoraRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_ecf_tributacaoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_finalizadora_sub_unRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_finalizadora_unRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_mvto_compra_cfop____Repository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_mvto_compra_dup____Repository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_parametro_descprod_unegRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_parametro_descvend_unegRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_parametro_markup_unegRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_produto_estoque_diaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_produto_estoque_loteRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_produto_tributacaoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_produto_unegRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itbr_promocao_produtoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_abcfarmaReporitory.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_abcfarma_periodoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_abertura_caixaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_bancoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_cadastro_contadorReporitory.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_cargoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_cfopRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_checkinRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_checkin_itemRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_checkin_item_tmpRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_checkin_tmpRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_checkoutRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_checkout_itemRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_clienteRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_cliente_anvisaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_cliente_bloqueioRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_cliente_enderecoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_cliente_fiscalRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_cliente_telefoneRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_conselhoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_conselho_regionalRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_contaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_convenioRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_crediarioRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_crediario_finalizadoraRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_crmRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_crm_enderecoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_crm_especialidadeRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_davRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_dav_itens____Repository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_ecfRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_ecf_ddRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_ecf_modeloRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_empresa_privatelabelRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_empresa_recargaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_entrega_areariscoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_entrega_enderecoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_entrega_poloRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_entrega_polo_bairroRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_entrega_prod_continuoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_entrega_quadranteRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_entrega_rotaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_entrega_rota_cepRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_finalizadoraRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_finalizadora_subRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_financeiro_administradoraRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_financeiro_bancosRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_financeiro_eventoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_financeiro_prazoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_financeiro_sangriaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_financeiro_suprimentoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_fornecedorRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_fornecedor_divisaoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_funcionarioRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_funcionario_horarioRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_funcionario_horario_itemRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_funcionario_visitanteRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_hist_sangria____Repository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_ibgeRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_ibpt_axRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_lancto_financeiroRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_liquidacao_formaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_liquidacao_motivoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_mvto_compra_dup____Repository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_mvto_compra_item_divergencia____Repository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_mvto_compra_item_lote____Repository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_mvto_compra_item____Repository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_mvto_compra____Repository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_mvto_fin____Repository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_nfeRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_nfe_cfopRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_nfe_danfeRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_nfe_finalizadoraRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_nfe_itemRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_paciente_anvisaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_paf_numeroRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_parametroRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_parametro_comissaoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_parametro_descconvRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_parametro_descmaxRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_parametro_descprodRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_parametro_descvendRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_parametro_limpezasRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_parametro_markupRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_pbmRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_pedido_compra_item____Repository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_pedido_compra____Repository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_piscofinsRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_pontoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_ponto_motivoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_princ_ativoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_privatelabelRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_privatelabel_finalizadoraRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produtoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produto_barraRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produto_classeRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produto_familiaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produto_fam_categoriaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produto_fam_categ_subRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produto_fam_grupoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produto_kitRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produto_linhaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produto_piscofinsRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produto_princativoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produto_receituarioRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_produto_similaridadeRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_promocaoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_promocao_tipoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_recargaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_recarga_finalizadoraRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_reducao_zRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_reducao_z_itensRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_sangriasRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_serie_notaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_sincronizacaoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_suprimentosRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_terminalRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_terminal_mobileRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_tipo_logradouroRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_tipo_mvto_produtoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_tipo_notaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_transportadoraRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_tributacaoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_ufRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_unid_negocioRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_unid_negocio_grupoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_unid_negocio_parametroRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_usuarioRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_usuario_bloqueioRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_usuario_dptoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_usuario_funcaoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_usuario_grupoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_vendaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_venda_davRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_venda_dav_itemRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_venda_estorno_tefRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_venda_itemRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_venda_pagamentoRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_venda_prevendaRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_venda_prevenda_itemRepository.cs" />
+    <Compile Include="RepositoryInterfaces\Itb_venda_prevenda_pgtoRepository.cs" />
+    <Compile Include="Repository\tb_agenda_produtoRepository.cs" />
+    <Compile Include="Repository\tbManagerUpdateRepository.cs" />
+    <Compile Include="Repository\tbr_abcfarma_ufRepository.cs" />
+    <Compile Include="Repository\tbr_convenio_clienteRepository.cs" />
+    <Compile Include="Repository\tbr_convenio_finalizadora_subRepository.cs" />
+    <Compile Include="Repository\tbr_convenio_unRepository.cs" />
+    <Compile Include="Repository\tbr_dicionario_produtoRepository.cs" />
+    <Compile Include="Repository\tbr_dicionario_unRepository.cs" />
+    <Compile Include="Repository\tbr_dpto_aplicativoRepository.cs" />
+    <Compile Include="Repository\tbr_ecf_finalizadoraRepository.cs" />
+    <Compile Include="Repository\tbr_ecf_tributacaoRepository.cs" />
+    <Compile Include="Repository\tbr_finalizadora_sub_unRepository.cs" />
+    <Compile Include="Repository\tbr_finalizadora_unRepository.cs" />
+    <Compile Include="Repository\tbr_mvto_compra_cfop____Repository.cs" />
+    <Compile Include="Repository\tbr_mvto_compra_dup____Repository.cs" />
+    <Compile Include="Repository\tbr_parametro_descprod_unegRepository.cs" />
+    <Compile Include="Repository\tbr_parametro_descvend_unegRepository.cs" />
+    <Compile Include="Repository\tbr_parametro_markup_unegRepository.cs" />
+    <Compile Include="Repository\tbr_produto_estoque_diaRepository.cs" />
+    <Compile Include="Repository\tbr_produto_estoque_loteRepository.cs" />
+    <Compile Include="Repository\tbr_produto_tributacaoRepository.cs" />
+    <Compile Include="Repository\tbr_produto_unegRepository.cs" />
+    <Compile Include="Repository\tbr_promocao_produtoRepository.cs" />
+    <Compile Include="Repository\tb_abcfarmaReporitory.cs" />
+    <Compile Include="Repository\tb_abcfarma_periodoRepository.cs" />
+    <Compile Include="Repository\tb_abertura_caixaRepository.cs" />
+    <Compile Include="Repository\tb_bancoRepository.cs" />
+    <Compile Include="Repository\tb_cadastro_contadorReporitory.cs" />
+    <Compile Include="Repository\tb_cargoRepository.cs" />
+    <Compile Include="Repository\tb_cfopRepository.cs" />
+    <Compile Include="Repository\tb_checkinRepository.cs" />
+    <Compile Include="Repository\tb_checkin_itemRepository.cs" />
+    <Compile Include="Repository\tb_checkin_item_tmpRepository.cs" />
+    <Compile Include="Repository\tb_checkin_tmpRepository.cs" />
+    <Compile Include="Repository\tb_checkoutRepository.cs" />
+    <Compile Include="Repository\tb_checkout_itemRepository.cs" />
+    <Compile Include="Repository\tb_clienteRepository.cs" />
+    <Compile Include="Repository\tb_cliente_anvisaRepository.cs" />
+    <Compile Include="Repository\tb_cliente_bloqueioRepository.cs" />
+    <Compile Include="Repository\tb_cliente_enderecoRepository.cs" />
+    <Compile Include="Repository\tb_cliente_fiscalRepository.cs" />
+    <Compile Include="Repository\tb_cliente_telefoneRepository.cs" />
+    <Compile Include="Repository\tb_conselhoRepository.cs" />
+    <Compile Include="Repository\tb_conselho_regionalRepository.cs" />
+    <Compile Include="Repository\tb_contaRepository.cs" />
+    <Compile Include="Repository\tb_convenioRepository.cs" />
+    <Compile Include="Repository\tb_crediarioRepository.cs" />
+    <Compile Include="Repository\tb_crediario_finalizadoraRepository.cs" />
+    <Compile Include="Repository\tb_crmRepository.cs" />
+    <Compile Include="Repository\tb_crm_enderecoRepository.cs" />
+    <Compile Include="Repository\tb_crm_especialidadeRepository.cs" />
+    <Compile Include="Repository\tb_davRepository.cs" />
+    <Compile Include="Repository\tb_dav_itens____Repository.cs" />
+    <Compile Include="Repository\tb_ecfRepository.cs" />
+    <Compile Include="Repository\tb_ecf_ddRepository.cs" />
+    <Compile Include="Repository\tb_ecf_modeloRepository.cs" />
+    <Compile Include="Repository\tb_empresa_privatelabelRepository.cs" />
+    <Compile Include="Repository\tb_empresa_recargaRepository.cs" />
+    <Compile Include="Repository\tb_entrega_areariscoRepository.cs" />
+    <Compile Include="Repository\tb_entrega_enderecoRepository.cs" />
+    <Compile Include="Repository\tb_entrega_poloRepository.cs" />
+    <Compile Include="Repository\tb_entrega_polo_bairroRepository.cs" />
+    <Compile Include="Repository\tb_entrega_prod_continuoRepository.cs" />
+    <Compile Include="Repository\tb_entrega_quadranteRepository.cs" />
+    <Compile Include="Repository\tb_entrega_rotaRepository.cs" />
+    <Compile Include="Repository\tb_entrega_rota_cepRepository.cs" />
+    <Compile Include="Repository\tb_finalizadoraRepository.cs" />
+    <Compile Include="Repository\tb_finalizadora_subRepository.cs" />
+    <Compile Include="Repository\tb_financeiro_administradoraRepository.cs" />
+    <Compile Include="Repository\tb_financeiro_bancosRepository.cs" />
+    <Compile Include="Repository\tb_financeiro_eventoRepository.cs" />
+    <Compile Include="Repository\tb_financeiro_prazoRepository.cs" />
+    <Compile Include="Repository\tb_financeiro_sangriaRepository.cs" />
+    <Compile Include="Repository\tb_financeiro_suprimentoRepository.cs" />
+    <Compile Include="Repository\tb_fornecedorRepository.cs" />
+    <Compile Include="Repository\tb_fornecedor_divisaoRepository.cs" />
+    <Compile Include="Repository\tb_funcionarioRepository.cs" />
+    <Compile Include="Repository\tb_funcionario_horarioRepository.cs" />
+    <Compile Include="Repository\tb_funcionario_horario_itemRepository.cs" />
+    <Compile Include="Repository\tb_funcionario_visitanteRepository.cs" />
+    <Compile Include="Repository\tb_hist_sangria____Repository.cs" />
+    <Compile Include="Repository\tb_ibgeRepository.cs" />
+    <Compile Include="Repository\tb_ibpt_axRepository.cs" />
+    <Compile Include="Repository\tb_lancto_financeiroRepository.cs" />
+    <Compile Include="Repository\tb_liquidacao_formaRepository.cs" />
+    <Compile Include="Repository\tb_liquidacao_motivoRepository.cs" />
+    <Compile Include="Repository\tb_mvto_compra_dup____Repository.cs" />
+    <Compile Include="Repository\tb_mvto_compra_item_divergencia____Repository.cs" />
+    <Compile Include="Repository\tb_mvto_compra_item_lote____Repository.cs" />
+    <Compile Include="Repository\tb_mvto_compra_item____Repository.cs" />
+    <Compile Include="Repository\tb_mvto_compra____Repository.cs" />
+    <Compile Include="Repository\tb_mvto_fin____Repository.cs" />
+    <Compile Include="Repository\tb_nfeRepository.cs" />
+    <Compile Include="Repository\tb_nfe_cfopRepository.cs" />
+    <Compile Include="Repository\tb_nfe_danfeRepository.cs" />
+    <Compile Include="Repository\tb_nfe_finalizadoraRepository.cs" />
+    <Compile Include="Repository\tb_nfe_itemRepository.cs" />
+    <Compile Include="Repository\tb_paciente_anvisaRepository.cs" />
+    <Compile Include="Repository\tb_paf_numeroRepository.cs" />
+    <Compile Include="Repository\tb_parametroRepository.cs" />
+    <Compile Include="Repository\tb_parametro_comissaoRepository.cs" />
+    <Compile Include="Repository\tb_parametro_descconvRepository.cs" />
+    <Compile Include="Repository\tb_parametro_descmaxRepository.cs" />
+    <Compile Include="Repository\tb_parametro_descprodRepository.cs" />
+    <Compile Include="Repository\tb_parametro_descvendRepository.cs" />
+    <Compile Include="Repository\tb_parametro_limpezasRepository.cs" />
+    <Compile Include="Repository\tb_parametro_markupRepository.cs" />
+    <Compile Include="Repository\tb_pbmRepository.cs" />
+    <Compile Include="Repository\tb_pedido_compra_item____Repository.cs" />
+    <Compile Include="Repository\tb_pedido_compra____Repository.cs" />
+    <Compile Include="Repository\tb_piscofinsRepository.cs" />
+    <Compile Include="Repository\tb_pontoRepository.cs" />
+    <Compile Include="Repository\tb_ponto_motivoRepository.cs" />
+    <Compile Include="Repository\tb_princ_ativoRepository.cs" />
+    <Compile Include="Repository\tb_privatelabelRepository.cs" />
+    <Compile Include="Repository\tb_privatelabel_finalizadoraRepository.cs" />
+    <Compile Include="Repository\tb_produtoRepository.cs" />
+    <Compile Include="Repository\tb_produto_barraRepository.cs" />
+    <Compile Include="Repository\tb_produto_classeRepository.cs" />
+    <Compile Include="Repository\tb_produto_familiaRepository.cs" />
+    <Compile Include="Repository\tb_produto_fam_categoriaRepository.cs" />
+    <Compile Include="Repository\tb_produto_fam_categ_subRepository.cs" />
+    <Compile Include="Repository\tb_produto_fam_grupoRepository.cs" />
+    <Compile Include="Repository\tb_produto_kitRepository.cs" />
+    <Compile Include="Repository\tb_produto_linhaRepository.cs" />
+    <Compile Include="Repository\tb_produto_piscofinsRepository.cs" />
+    <Compile Include="Repository\tb_produto_princativoRepository.cs" />
+    <Compile Include="Repository\tb_produto_receituarioRepository.cs" />
+    <Compile Include="Repository\tb_produto_similaridadeRepository.cs" />
+    <Compile Include="Repository\tb_promocaoRepository.cs" />
+    <Compile Include="Repository\tb_promocao_tipoRepository.cs" />
+    <Compile Include="Repository\tb_recargaRepository.cs" />
+    <Compile Include="Repository\tb_recarga_finalizadoraRepository.cs" />
+    <Compile Include="Repository\tb_reducao_zRepository.cs" />
+    <Compile Include="Repository\tb_reducao_z_itensRepository.cs" />
+    <Compile Include="Repository\tb_sangriasRepository.cs" />
+    <Compile Include="Repository\tb_serie_notaRepository.cs" />
+    <Compile Include="Repository\tb_sincronizacaoRepository.cs" />
+    <Compile Include="Repository\tb_suprimentosRepository.cs" />
+    <Compile Include="Repository\tb_terminalRepository.cs" />
+    <Compile Include="Repository\tb_terminal_mobileRepository.cs" />
+    <Compile Include="Repository\tb_tipo_logradouroRepository.cs" />
+    <Compile Include="Repository\tb_tipo_mvto_produtoRepository.cs" />
+    <Compile Include="Repository\tb_tipo_notaRepository.cs" />
+    <Compile Include="Repository\tb_transportadoraRepository.cs" />
+    <Compile Include="Repository\tb_tributacaoRepository.cs" />
+    <Compile Include="Repository\tb_ufRepository.cs" />
+    <Compile Include="Repository\tb_unid_negocioRepository.cs" />
+    <Compile Include="Repository\tb_unid_negocio_grupoRepository.cs" />
+    <Compile Include="Repository\tb_unid_negocio_parametroRepository.cs" />
+    <Compile Include="Repository\tb_usuarioRepository.cs" />
+    <Compile Include="Repository\tb_usuario_bloqueioRepository.cs" />
+    <Compile Include="Repository\tb_usuario_dptoRepository.cs" />
+    <Compile Include="Repository\tb_usuario_funcaoRepository.cs" />
+    <Compile Include="Repository\tb_usuario_grupoRepository.cs" />
+    <Compile Include="Repository\tb_vendaRepository.cs" />
+    <Compile Include="Repository\tb_venda_davRepository.cs" />
+    <Compile Include="Repository\tb_venda_dav_itemRepository.cs" />
+    <Compile Include="Repository\tb_venda_estorno_tefRepository.cs" />
+    <Compile Include="Repository\tb_venda_itemRepository.cs" />
+    <Compile Include="Repository\tb_venda_pagamentoRepository.cs" />
+    <Compile Include="Repository\tb_venda_prevendaRepository.cs" />
+    <Compile Include="Repository\tb_venda_prevenda_itemRepository.cs" />
+    <Compile Include="Repository\tb_venda_prevenda_pgtoRepository.cs" />
+    <Compile Include="spAberturaCaixaAtualizar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spAberturaCaixaInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spAberturaCaixaObterPdvAbertoPorUsuario_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spAberturaCaixaObterPorUsuario_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoClienteFiscalAtualizar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoClienteFiscalInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoClienteFiscalObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoClienteListarPorDescricao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoClienteObterPorIdTodosOsDados_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaDavItemListarPorDav_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaInserirDav_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaInserirPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaListarDavPorVendedor_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaListarDav_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaListarPreVendaDavPorNumComanda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaListarPreVendaPorVendedor_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaListarPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaObterDavPorNumComanda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaObterDavPorNumPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaObterPreVendaPorNumComanda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaObterPreVendaPorNumPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBalcaoSyncServidorVendaPreVendaItemListarPorPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCadastroContadorObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCheckInByChkinID_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCheckInItemByChkinID_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCheckInItemByProId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCheckInReadBy_NumNf_Fab_Div_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCheckInRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteAnvisaAtualizar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteAnvisaInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteAnvisaListarPorNome_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteAnvisaListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteAnvisaObterPorNumDocumentoOrgaoExpedidor_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteEnderecoObterCep_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteEnderecoObterPorIdCliente_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteFiscalAtualizar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteFiscalInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteFiscalListarPorNome_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteFiscalListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteFiscalObterPorCpfCnjp_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteListarPorDescricao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spClienteObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConvenioClienteListarPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConvenioClienteObterFuncPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConvenioFinalizadoraSubObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConvenioListarPorTipo_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConvenioListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spConvenioObter_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCovenioClienteListarPorDescricao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCovenioListarPorDescricao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCovenioObterEmpresaPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCovenioObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCrmEnderecoInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCrmEnderecoObterPorCrm_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCrmInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCrmListarPorDescricao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCrmListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCrmObterPorCrmSiglaUfCrmTipo_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spCrmObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spDavInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spDavListarPorPeriodo_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spDavObterPorNumPafData_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spDavObterPorVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEcfDdListarPorSerieDtMovimento_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEcfFinalizadoraListarNumSerie_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEcfFinalizadoraListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEcfFinalizadoraObterPorIdNumSerie_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEcfInserirEcf_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEcfListarAgrupadoPorPeriodo_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEcfListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEcfModeloListarTodos_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEcfModeloObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEcfModeloObterPorMarcaModeloVersao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEcfObterEcfPorNumSerie_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEcfObterPorMarcaModeloVersao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntNotaCFOPRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntNotaCheckInReadPorNota_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntNotaDicionarioProdutoRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntNotaFinanceiroPrazoRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntNotaFornecedorDivisaoRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntNotaFornecedorRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntNotasTransportadoraRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntNotasUFRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntNotasUnidNegocioRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntNotaTipoNotaRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntNotaTributoRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntregaEnderecoObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spEntregaEnderecoObter_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinalizadoraListarPorConvenio_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinalizadoraListarPorFinalId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinalizadoraListarTodos_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinalizadoraObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinalizadoraSubGetAll_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinalizadoraSubGetByIdFinalizadora_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinalizadoraSubListarProFinalId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinalizadoraSubListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinalizadoraSubObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinalizadoraSubPorConvenio_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinanceiroBancosListarTodos_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinanceiroEventoListarPorDescricao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinanceiroEventoListarPorTipoLancamento_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinanceiroLanctoAlterar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinanceiroLanctoInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinanceiroLanctoObterUltimo_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinanceiroPrazoListarPorTipoPrazo_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinanceiroPrazoObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinanceiroSangriaAlterar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinanceiroSangriaInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinanceiroSuprimentoAlterar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFinanceiroSuprimentoInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFornecedorDivisaoReadByFabId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFornecedorDivisaoRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFornecedorObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFornecedorRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioHorarioFindAll_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioHorarioFindByHora_situacao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioHorarioItemFindAll_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioHorarioItemFindByIhora_situacao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioHorarioItemReadByIhora_situacao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioHorarioReadByHora_situacao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioObterPorCpf_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioObterPorIdUsuario_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioObterPorMatricula_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioReadAll_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioReadByID_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioReadByMatricula_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioReadBySituacao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioVisitanteFindAll_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioVisitanteFindByFunc_id_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFuncionarioVisitanteRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spGetProdutoAutoComplete_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spIbgeListarPorUf_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spIbgeListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spIbgeObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spIbgeObterPorMunicipio_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spIbptAxObterPorNcm_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spObterMovimentoPdv_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPacienteAnvisaInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPacienteAnvisaListarPorDescricao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPacienteAnvisaListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPacienteAnvisaObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvClienteListarPorDescricao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvClienteObterPorIdTodosOsDados_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorClienteObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaDavItemListarPorDav_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaListarDavPorVendedor_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaListarDav_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaListarPreVendaDavPorNumComanda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaListarPreVendaPorVendedor_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaListarPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaObterDavPorNumComanda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaObterDavPorNumPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaObterPreVendaDevolucaoPorCpf_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaObterPreVendaPorNumComanda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaObterPreVendaPorNumPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaObterPreVendaTrocaPorCpf_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPdvSyncServidorVendaPreVendaItemListarPorPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPontoMotivoRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPontoReadLastFuncIDPonto_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPontoReadPontoByDate_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPontoReadPontoOfGetDate_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPontoRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProdutoBarraListarPorProId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProdutoEstoqueDiaListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProdutoEstoqueLoteObterLote_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProdutoEstoqueLoteObter_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProdutoFamiliaCategoriaObterPorIdFamidGrpid_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProdutoFamiliaCategoriaSubObterPorIdFamidGrpidCatid_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProdutoFamiliaGrupoObterPorIdFamid_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProdutoFamiliaObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProdutoFamiliaObter_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProdutoListarTodos_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProdutoObterPorCodigoBarras_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spProdutoTributacaoObter_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpPromocaoUneg_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spRecargaInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spReducaoZInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spReducaoZItensInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spReducaoZItensListarPorReducao_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spReducaoZItensObterPorProduto_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spReducaoZListarPorPeriodo_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spReducaoZObterPorNumSerieEcfDataMovimento_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spReducaoZObterReducaoAnterior_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spReducaoZObterUltimaReducaoZ_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSangriaAlterar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSangriaInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSuprimentosAtualizar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSuprimentosInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncServidorTabletListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncServidorTabletVerificarCadastroTablet_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncServidorTerminalListarTodas_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncServidorTerminalParametroDescProdUnegInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncServidorTerminalParametroDescVendUnegInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncServidorTerminalPromocaoConvenio_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncServidorTerminalPromocaoUneg_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncServidorWebListarTodas_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncTerminalServidorListarTodas_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncTerminalServidorVendaInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncTerminalServidorVendaItemInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncWebServidorConvenioFinalizadoraSubInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncWebServidorConvenioInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncWebServidorParametroDescProdUnegInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSyncWebServidorParametroDescVendUnegInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpSynncServTermPromocaoUneg_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPtbr_promocao_convenio_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPtbr_promocao_uneg_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPtbr_promocao_uneg_Result1.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTerminalAtualizarSerieNumeroNfceTerminal_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTerminalInserirTerminal_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTerminalObterTerminalPorHD_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTerminalObterTerminalPorNome_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTerminalObterTerminalPorSerieHD_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTerminalObterTerminal_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTerminalSyncServidorObterTerminalPorNome_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTipoLogradouroObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTributacaoListarPorAliquotaMaiorZero_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTributacaoListarPorSubstTributaria_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTributacaoListarTodos_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spTributacaoObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUFListarUF_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUFObterPorSigla_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUfObterUfPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUnidadeNegocioAtualizar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUnidadeNegocioListarTodos_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUnidadeNegocioObterPorCNPJ_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUnidadeNegocioObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUnidadeNegocioParametroAtualizarDataUltExpCobol_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUnidadeNegocioParametroAtualizar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUnidadeNegocioParametroObterPorUnidadeNegocioParametro_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUnidadeNegocioParametroObterPorUnidadeNegocio_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUnidNegocioRead_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUsuarioAcesso_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUsuarioFuncaoPorIdUsuario_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUsuarioLoginPorCpf_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUsuarioLoginPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUsuarioObterPorCpf_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUsuarioObterPorIdFunc_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spUsuarioObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaCancelarVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaDavInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaDavItemListarPorDav_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaDavListarPorVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaEstornoTefListarPorVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaEstornoTefListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaInserirPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaItemAtualizar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaItemInsertItemCancelado_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaItemInsert_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaItemListarItensNaoCanceladosPorVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaItemListarPorVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaItemListarVolumePorVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaItemListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaListarDavPorVendedor_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaListarDav_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaListarPorEcfNumeroSerieDataMovimento_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaListarPorPeriodoDataFiscal_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaListarPreVendaPorVendedor_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaListarPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaListarVendaNaoCancelada_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterDavFinalizada_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterDavInativa_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterDavPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterDavPorNumPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterDav_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterPorNsu_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterPreVendaFinalizada_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterPreVendaInativa_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterPreVendaPorId_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterPreVendaPorNumPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaObterUltimaVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaPagamentoInserir_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaPagamentoListarPorPeriodoAgrupadoData_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaPagamentoListarPorVendaTef_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaPagamentoListarPorVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaPagamentoListar_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaPagamentoObterPorNsuDataVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaPreVendaItemListarPorPreVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaPreVendaListarPorVenda_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spVendaVerificarAutorizacaoDesconto_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbManagerUpdate.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_abcfarma_uf.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_convenio_cliente.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_convenio_finalizadora_sub.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_convenio_un.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_dicionario_produto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_dicionario_un.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_dpto_aplicativo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_ecf_finalizadora.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_ecf_tributacao.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_finalizadora_sub_un.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_finalizadora_un.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_mvto_compra_cfop____.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_mvto_compra_dup____.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_parametro_descprod_uneg.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_parametro_descvend_uneg.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_parametro_markup_uneg.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_produto_estoque_dia.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_produto_estoque_lote.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_produto_tributacao.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_produto_uneg.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_promocao_convenio_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbr_promocao_produto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_abcfarma.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_abcfarma_periodo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_abertura_caixa.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_agenda_produto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_banco.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_cadastro_contador.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_cargo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ceps.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_cfop.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_checkin.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_checkin_item.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_checkin_item_tmp.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_checkin_tmp.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_checkout.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_checkout_item.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_cliente.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_cliente_anvisa.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_cliente_bloqueio.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_cliente_endereco.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_cliente_fiscal.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_cliente_telefone.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_conselho.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_conselho_regional.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_conta.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_convenio.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_crediario.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_crediario_finalizadora.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_crm.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_crm_endereco.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_crm_especialidade.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_dav.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_dav_itens____.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ecf.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ecf_dd.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ecf_modelo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empresa_privatelabel.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empresa_recarga.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_entrega_arearisco.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_entrega_endereco.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_entrega_polo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_entrega_polo_bairro.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_entrega_prod_continuo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_entrega_quadrante.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_entrega_rota.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_entrega_rota_cep.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_finalizadora.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_finalizadora_sub.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_financeiro_administradora.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_financeiro_bancos.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_financeiro_evento.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_financeiro_prazo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_financeiro_sangria.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_financeiro_suprimento.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_fornecedor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_fornecedor_divisao.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_funcionario.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_funcionario_horario.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_funcionario_horario_item.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_funcionario_visitante.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_hist_sangria____.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ibge.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ibpt_ax.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_lancto_financeiro.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_liquidacao_forma.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_liquidacao_motivo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_mvto_compra_dup____.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_mvto_compra_item_divergencia____.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_mvto_compra_item_lote____.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_mvto_compra_item____.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_mvto_compra____.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_mvto_fin____.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_nfe.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_nfe_cfop.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_nfe_danfe.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_nfe_finalizadora.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_nfe_item.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_paciente_anvisa.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_paf_numero.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_parametro.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_parametro_comissao.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_parametro_descconv.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_parametro_descmax.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_parametro_descprod.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_parametro_descvend.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_parametro_limpezas.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_parametro_markup.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_pbm.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_pedido_compra_item____.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_pedido_compra____.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_piscofins.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ponto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ponto_motivo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_princ_ativo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_privatelabel.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_privatelabel_finalizadora.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto_barra.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto_classe.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto_familia.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto_fam_categoria.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto_fam_categ_sub.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto_fam_grupo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto_kit.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto_linha.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto_piscofins.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto_princativo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto_receituario.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto_similaridade.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_promocao.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_promocao_tipo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_recarga.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_recarga_finalizadora.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_reducao_z.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_reducao_z_itens.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_sangrias.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_serie_nota.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_sincronizacao.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_suprimentos.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_terminal.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_terminal_mobile.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_tipo_logradouro.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_tipo_mvto_produto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_tipo_nota.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_transportadora.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_tributacao.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_uf.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_unid_negocio.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_unid_negocio_grupo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_unid_negocio_parametro.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_usuario.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_usuario_bloqueio.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_usuario_dpto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_usuario_funcao.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_usuario_grupo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_venda.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_venda_dav.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_venda_dav_item.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_venda_estorno_tef.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_venda_item.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_venda_pagamento.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_venda_prevenda.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_venda_prevenda_item.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_venda_prevenda_pgto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\sql-bulk-merge\src\SqlBulkMerge.csproj">
+      <Project>{add32911-5a38-4e38-bcd6-e641248765d9}</Project>
+      <Name>SqlBulkMerge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\sql-bulk-merge\tests\SqlBulkMerge.Test.csproj">
+      <Project>{78c69767-0237-459d-bbb6-8daa02ddb97d}</Project>
+      <Name>SqlBulkMerge.Test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\2. Business Layer\ArquiteturaASABusiness\ArquiteturaASABusiness\ArquiteturaASABusiness.csproj">
+      <Project>{3ddcc673-916f-4f43-97ca-a29df6cf6b55}</Project>
+      <Name>ArquiteturaASABusiness</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.edmx.sql" />
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

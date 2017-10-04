@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cd1df8c6b44e4c3f8d16970ee622e038" Name="Diagram1" ZoomLevel="22">
+        <EntityTypeShape EntityType="db_lojaModel.tb_abcfarma" Width="1.5" PointX="3.75" PointY="73.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_abcfarma_periodo" Width="1.5" PointX="11.25" PointY="109.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_abertura_caixa" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_agenda_produto" Width="1.5" PointX="15.75" PointY="165.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_banco" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_cadastro_contador" Width="1.5" PointX="8.25" PointY="171" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_cargo" Width="1.5" PointX="11" PointY="122.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_ceps" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_cfop" Width="1.5" PointX="14.25" PointY="114.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_checkin" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_checkin_item" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_checkin_item_tmp" Width="1.5" PointX="15" PointY="139.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_checkin_tmp" Width="1.5" PointX="12.75" PointY="153.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_checkout" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_checkout_item" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_cliente" Width="1.5" PointX="7.5" PointY="154.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_cliente_anvisa" Width="1.5" PointX="7.5" PointY="142.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_cliente_bloqueio" Width="1.5" PointX="5.25" PointY="151.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_cliente_endereco" Width="1.5" PointX="12.75" PointY="158.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_cliente_fiscal" Width="1.5" PointX="21.75" PointY="148.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_cliente_telefone" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_conselho" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_conselho_regional" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_conta" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_convenio" Width="1.5" PointX="3" PointY="128.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_crediario" Width="1.5" PointX="5.25" PointY="133.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_crediario_finalizadora" Width="1.5" PointX="4.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_crm" Width="1.5" PointX="7.5" PointY="146.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_crm_endereco" Width="1.5" PointX="24.75" PointY="130.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_crm_especialidade" Width="1.5" PointX="6.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_dav" Width="1.5" PointX="21" PointY="139" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_dav_itens____" Width="1.5" PointX="23.25" PointY="139.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_ecf" Width="1.5" PointX="16.5" PointY="197" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_ecf_dd" Width="1.5" PointX="29.75" PointY="167.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_ecf_modelo" Width="1.5" PointX="14.25" PointY="197.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_empresa_privatelabel" Width="1.5" PointX="6" PointY="128.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_empresa_recarga" Width="1.5" PointX="6" PointY="123.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_entrega_arearisco" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_entrega_endereco" Width="1.5" PointX="12.75" PointY="172.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_entrega_polo" Width="1.5" PointX="12.75" PointY="169.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_entrega_polo_bairro" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_entrega_prod_continuo" Width="1.5" PointX="8.25" PointY="79.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_entrega_quadrante" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_entrega_rota" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_entrega_rota_cep" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_finalizadora" Width="1.5" PointX="0.75" PointY="117.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_finalizadora_sub" Width="1.5" PointX="3" PointY="121.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_financeiro_administradora" Width="1.5" PointX="0.75" PointY="124.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_financeiro_bancos" Width="1.5" PointX="11" PointY="118" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_financeiro_evento" Width="1.5" PointX="0.75" PointY="134.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_financeiro_prazo" Width="1.5" PointX="0.75" PointY="127.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_financeiro_sangria" Width="1.5" PointX="31.75" PointY="140.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_financeiro_suprimento" Width="1.5" PointX="15.75" PointY="190.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_fornecedor" Width="1.5" PointX="1.5" PointY="109.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_fornecedor_divisao" Width="1.5" PointX="3.75" PointY="106.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_funcionario" Width="1.5" PointX="13.25" PointY="122.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_funcionario_horario" Width="1.5" PointX="11" PointY="112.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_funcionario_horario_item" Width="1.5" PointX="13.25" PointY="68.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_funcionario_visitante" Width="1.5" PointX="12.75" PointY="179.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_hist_sangria____" Width="1.5" PointX="10.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_ibge" Width="1.5" PointX="6" PointY="172.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_ibpt_ax" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_lancto_financeiro" Width="1.5" PointX="21.75" PointY="168.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_liquidacao_forma" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_liquidacao_motivo" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_mvto_compra____" Width="1.5" PointX="18.75" PointY="141.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_mvto_compra_dup____" Width="1.5" PointX="21.75" PointY="131" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_mvto_compra_item____" Width="1.5" PointX="27" PointY="140.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_mvto_compra_item_divergencia____" Width="1.5" PointX="21" PointY="135.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_mvto_compra_item_lote____" Width="1.5" PointX="29.25" PointY="141.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_mvto_fin____" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_nfe" Width="1.5" PointX="14.25" PointY="72.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_nfe_cfop" Width="1.5" PointX="16.5" PointY="110.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_nfe_danfe" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_nfe_finalizadora" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_nfe_item" Width="1.5" PointX="16.5" PointY="91.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_paciente_anvisa" Width="1.5" PointX="7.5" PointY="151.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_paf_numero" Width="1.5" PointX="2.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_parametro" Width="1.5" PointX="14.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_parametro_comissao" Width="1.5" PointX="11.25" PointY="90.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_parametro_descconv" Width="1.5" PointX="8.25" PointY="133.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_parametro_descmax" Width="1.5" PointX="14.25" PointY="90.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_parametro_descprod" Width="1.5" PointX="11.25" PointY="100.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_parametro_descvend" Width="1.5" PointX="18.75" PointY="129.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_parametro_limpezas" Width="1.5" PointX="14.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_parametro_markup" Width="1.5" PointX="13.5" PointY="107.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_pbm" Width="1.5" PointX="4.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_pedido_compra____" Width="1.5" PointX="24.75" PointY="158.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_pedido_compra_item____" Width="1.5" PointX="27" PointY="166.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_piscofins" Width="1.5" PointX="6.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_ponto" Width="1.5" PointX="18.75" PointY="190.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_ponto_motivo" Width="1.5" PointX="16.5" PointY="187.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_princ_ativo" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_privatelabel" Width="1.5" PointX="8.25" PointY="128.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_privatelabel_finalizadora" Width="1.5" PointX="10.5" PointY="131.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto" Width="1.5" PointX="6" PointY="80.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto_barra" Width="1.5" PointX="8.25" PointY="98.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto_classe" Width="1.5" PointX="3.75" PointY="79.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto_fam_categ_sub" Width="1.5" PointX="3.75" PointY="83.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto_fam_categoria" Width="1.5" PointX="1.5" PointY="84.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto_fam_grupo" Width="1.5" PointX="1.5" PointY="80.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto_familia" Width="1.5" PointX="1.5" PointY="76.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto_kit" Width="1.5" PointX="16.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto_linha" Width="1.5" PointX="3.75" PointY="88.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto_piscofins" Width="1.5" PointX="3.75" PointY="92.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto_princativo" Width="1.5" PointX="3.75" PointY="95.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto_receituario" Width="1.5" PointX="3.75" PointY="98.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_produto_similaridade" Width="1.5" PointX="3.75" PointY="102" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_promocao" Width="1.5" PointX="5.25" PointY="158.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_promocao_tipo" Width="1.5" PointX="16.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_recarga" Width="1.5" PointX="8.25" PointY="123.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_recarga_finalizadora" Width="1.5" PointX="10.5" PointY="125.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_reducao_z" Width="1.5" PointX="18.75" PointY="197.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_reducao_z_itens" Width="1.5" PointX="21" PointY="198.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_sangrias" Width="1.5" PointX="8.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_serie_nota" Width="1.5" PointX="16.5" PointY="135.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_sincronizacao" Width="1.5" PointX="27" PointY="150.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_suprimentos" Width="1.5" PointX="16.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_terminal" Width="1.5" PointX="24.75" PointY="146.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_terminal_mobile" Width="1.5" PointX="10.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_tipo_logradouro" Width="1.5" PointX="8.25" PointY="167.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_tipo_mvto_produto" Width="1.5" PointX="14.25" PointY="118.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_tipo_nota" Width="1.5" PointX="16.5" PointY="114.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_transportadora" Width="1.5" PointX="16.5" PointY="131.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_tributacao" Width="1.5" PointX="6" PointY="117" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_uf" Width="1.5" PointX="5.25" PointY="145.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_unid_negocio" Width="1.5" PointX="10.5" PointY="153.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_unid_negocio_grupo" Width="1.5" PointX="16.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_unid_negocio_parametro" Width="1.5" PointX="16.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_usuario" Width="1.5" PointX="13.5" PointY="189" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_usuario_bloqueio" Width="1.5" PointX="11.25" PointY="183.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_usuario_dpto" Width="1.5" PointX="11.25" PointY="186.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_usuario_funcao" Width="1.5" PointX="11.25" PointY="192.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_usuario_grupo" Width="1.5" PointX="11.25" PointY="198.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_venda" Width="1.5" PointX="18.75" PointY="152.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_venda_dav" Width="1.5" PointX="15.75" PointY="156.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_venda_dav_item" Width="1.5" PointX="30" PointY="155" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_venda_estorno_tef" Width="1.5" PointX="21" PointY="174.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_venda_item" Width="1.5" PointX="8.25" PointY="102.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_venda_pagamento" Width="1.5" PointX="15.75" PointY="143.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_venda_prevenda" Width="1.5" PointX="21.75" PointY="154.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_venda_prevenda_item" Width="1.5" PointX="24.75" PointY="164.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tb_venda_prevenda_pgto" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbManagerUpdate" Width="1.5" PointX="0.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_abcfarma_uf" Width="1.5" PointX="13.5" PointY="103.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_convenio_cliente" Width="1.5" PointX="9.75" PointY="145.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_convenio_finalizadora_sub" Width="1.5" PointX="5.25" PointY="167.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_convenio_un" Width="1.5" PointX="12.75" PointY="146.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_dicionario_produto" Width="1.5" PointX="8.25" PointY="94.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_dicionario_un" Width="1.5" PointX="6" PointY="110.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_dpto_aplicativo" Width="1.5" PointX="13.5" PointY="184.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_ecf_finalizadora" Width="1.5" PointX="27.75" PointY="171.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_ecf_tributacao" Width="1.5" PointX="29.75" PointY="151.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_finalizadora_sub_un" Width="1.5" PointX="12.75" PointY="142" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_finalizadora_un" Width="1.5" PointX="12.75" PointY="164.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_mvto_compra_cfop____" Width="1.5" PointX="30" PointY="145.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_mvto_compra_dup____" Width="1.5" PointX="24" PointY="136.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_parametro_descprod_uneg" Width="1.5" PointX="12.75" PointY="234.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_parametro_descvend_uneg" Width="1.5" PointX="12.75" PointY="236.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_parametro_markup_uneg" Width="1.5" PointX="15.75" PointY="152.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_produto_estoque_dia" Width="1.5" PointX="18.75" PointY="169.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_produto_estoque_lote" Width="1.5" PointX="12.75" PointY="150.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_produto_tributacao" Width="1.5" PointX="8.25" PointY="116.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_produto_uneg" Width="1.5" PointX="27.75" PointY="156.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_lojaModel.tbr_promocao_produto" Width="1.5" PointX="7.5" PointY="190.375" IsExpanded="true" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto_tb_abcfarma" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_abcfarma_uf_tb_abcfarma" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_abcfarma_uf_tb_abcfarma_periodo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_agenda_produto_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_agenda_produto_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_agenda_produto_tb_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_agenda_produto_tb_usuario1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_cadastro_contador_tb_ibge" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_unid_negocio_tb_cadastro_contador" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_funcionario_tb_cargo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra_item_tb_cfop" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_nfe_item_tb_cfop" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_tipo_nota_tb_cfop" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_mvto_compra_cfop_tb_cfop" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_mvto_nfe_cfop_tb_cfop" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_checkin_item_tmp_tb_checkin_tmp" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_checkin_item_tmp_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_checkin_tmp_tb_fornecedor_divisao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_checkin_tmp_tb_pe" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_checkin_tmp_tb_un" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_cliente_endereco_tb_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_cliente_tb_cliente_bloqueio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_cliente_tb_promocao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_cliente_tb_uf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_cliente_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_convenio_tb_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_crediario_tb_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_funcionario_tb_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_dav_tb_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_pagamento_tb_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_prevenda_tb_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_tb_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_convenio_cliente_tb_cliente1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_cliente_anvisa_tb_cliente_anvisa" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_convenio_cliente_tb_cliente_bloqueio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_cliente_endereco_tb_uf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_cliente_fiscal_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_cliente_fiscal_tb_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_tb_cliente_fiscal" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_conselho_regional_tb_conselho" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_convenio_prazo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_crediario_tb_convenio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_funcionario_tb_convenio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descconv_tb_convenio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_convenio_cliente_tb_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_convenio_finalizadora" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_convenio_un2_tb_co" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_crediario_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_crm_endereco_crm_id_crm_tipo_uf_id" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_crm_tb_uf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_crm_endereco_uf_id" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_dav_itens_tb_dav" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_dav_tb_venda" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_ecf_dd_tb_ecf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_ecf_tb_ecf_modelo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_reducao_z_tb_ecf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_tb_ecf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_ecf_finalizadora_tb_ecf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_ecf_tributacao_tb_ecf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_ecf_dd_tb_finalizadora" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_terminal_tb_ecf_modelo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_empresa_privatelabel_tb_financeiro_prazo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_empresa_privatelabel_tb_fornecedor_divisao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_privatelabel_tb_empresa_privatelabel" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_recarga_empresa_tb_financeiro_prazo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_recarga_empresa_tb_fornecedor_divisao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_recarga_tb_recarga_empresa" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_entrega_endereco_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_polo_entrega_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_entrega_prod_continuo_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_finalizadora_sub_tb_finalizadora" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_financeiro_sangria_tb_finalizadora" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_pagamento_tb_finalizadora" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_ecf_finalizadora_tb_finalizadora" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_finalizadora_un1_t4804" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_finalizadora_sub_tb_financeiro_administradora" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_finalizadora_sub_tb_financeiro_evento" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_finalizadora_sub_tb_financeiro_prazo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_finalizadora_sub_un_tb_finalizadora_sub" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_funcionario_tb_financeiro_bancos" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_pagamento_tb_financeiro_bancos" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_finalizadora_sub_un_tb_financeiro_banco" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_financeiro_lancto_tb_financeiro_evento" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_tipo_nota_tb_financeiro_evento" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra_tb_financeiro_prazo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_privatelabel_finalizadora_tb_financeiro_prazo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_recarga_finalizadora_tb_financeiro_prazo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_pagamento_tb_financeiro_prazo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_convenio_cliente_tb_financeiro_prazo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_financeiro_sangria_tb_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_financeiro_suprimento_tb_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_fornecedor_divisao11282" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descvend_tb_fornecedor" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_dicionario_produto2729" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra4_tb_fo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_comissao_tb_fornecedor" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descconv_tb_fornecedor_divisao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_desconto_tb_fornecedor" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descprod_tb_fornecedor_divisao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descvend_tb_fornecedor_divisao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_markup_tb_fornecedor" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_pedido_compra3_tb_f9800" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto9_tb_fo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_dicionario_un_tb_fornecedor_divisao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_funcionario_tb_funcionario_horario" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_funcionario_tb_funcionario_horario1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_funcionario_uneg_locacao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_funcionario_uneg_registro" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_funcionario_horario_item_tb_funcionario_horario" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_funcionario_visitante_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_ibge_tb_uf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_unid_negocio_tb_ibge" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_lancto_financeiro_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra_item_divergencia_tb_mvto_compra_item" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra_item1_t555" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra_tb_serie_nt" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra_tb_uf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra1_tb_un" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra2_tb_ti" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra3_tb_tr" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_cfop_compra1_tb_mv" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_mvto_compra_fin_tb_mvto_compra" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra_dup_tb_mvto_compra_dup" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_mvto_compra_fin_tb_mvto_compra_fin" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra_item_lote_tb_mvto_compra_item" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_mvto_compra_item_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_nfe_item_tb_nfe" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_nfe_item_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_paciente_anvisa_tb_paciente_anvisa" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_comissao_tb_parametro_comissao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_comissao_tb_parametro_comissao1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_comissao_tb_produto_classe" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_comissao_tb_produto_fam_categ_sub" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_comissao_tb_produto_linha" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_comissao_tb_produto_similaridade" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descconv_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descconv_tb_produto_classe" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descconv_tb_produto_fam_categ_sub" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descconv_tb_produto_linha" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descconv_tb_produto_similaridade" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_desconto_tb_parametro_desconto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_desconto_tb_produto_classe" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_desconto_tb_produto_fam_categ_sub" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_desconto_tb_produto_linha" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_desconto_tb_produto_similaridade" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descprod_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descprod_tb_produto_classe" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descprod_tb_produto_fam_categ_sub" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descprod_tb_produto_linha" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descprod_tb_produto_similaridade" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descmax_tb_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descmax_tb_usuario_funcao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descvend_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descvend_tb_produto_classe" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descvend_tb_produto_fam_categ_sub" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descvend_tb_produto_fam_categoria" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descvend_tb_produto_fam_grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descvend_tb_produto_familia" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descvend_tb_produto_linha" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_descvend_tb_produto_similaridade" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_markup_tb_parametro_markup" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_markup_tb_produto_classe" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_markup_tb_produto_fam_categ_sub" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_markup_tb_produto_linha" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_parametro_markup_tb_produto_similaridade" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_parametro_markup_uneg_tb_parametro_markup" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_pedido_compra_item13902" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_pedido_compra1_tb_u9994" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_ponto_tb_ponto_motivo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_ponto_tb_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_privatelabel_finalizadora_tb_privatelabel" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_estoque_lote_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto_barra_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto_hist_diario_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto_tb_produto_piscofins" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto10_tb_pr" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto3_tb_pr" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto4_tb_pr" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto5_tb_pr" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto6_tb_pr" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto7_tb_pr" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_dav_item_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_item_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_prevenda_item_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_dicionario_produto_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_produto_tributacao5334" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_produto_uneg_tb_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto_subcateg1_t3705" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto_categoria1_1492" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto_grupo1_tb_p6944" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_promocao_produto_promocao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_recarga_finalizadora_tb_recarga1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_reducao_z_itens_tb_reducao_z" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_Sincronizacao_tb_terminal" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_terminal_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_unid_negocio_tb_tipo_logradouro" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_tipo_nota_tb_tipo_mvto_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_ecf_tributacao_tb_tributacao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_produto_tributacao_tb_tributacao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_produto_tributacao_tb_tributacao1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_uf_tb_uf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_unid_negocio_tb_uf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_abcfarma_uf_tb_uf" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_produto_tributacao7747" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_estoque_lote_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_produto_hist_diario_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_prevenda_item_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_convenio_un1_tb_un" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_finalizadora_sub_u8262" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_finalizadora_un2_t3406" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_parametro_descprod_uneg_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_parametro_descvend_uneg_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_parametro_markup_uneg_tb_unid_negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_produto_uneg" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_usuario_tb_usuario_bloqueio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_usuario_tb_usuario_dpto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_usuario_tb_usuario_grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_usuario1_tb_usuario_funcao" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_dav_tb_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_prevenda_item_tb_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_prevenda_tb_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tbr_dpto_aplicativo_tb_usuario_dpto" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_estorno_tef_tb_venda" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_tb_venda" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_dav_item_tb_venda_dav" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.FK_tb_venda_dav_item_tb_venda_dav_item" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.tbr_promocao_convenio" ManuallyRouted="false" />
+        <AssociationConnector Association="db_lojaModel.tbr_promocao_uneg" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

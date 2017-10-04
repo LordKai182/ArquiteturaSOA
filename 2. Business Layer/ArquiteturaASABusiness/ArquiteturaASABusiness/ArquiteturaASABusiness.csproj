@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DDCC673-916F-4F43-97CA-A29DF6CF6B55}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArquiteturaASABusiness</RootNamespace>
+    <AssemblyName>ArquiteturaASABusiness</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\tbManagerUpdate.cs" />
+    <Compile Include="BusinessObjects\tbr_abcfarma_uf.cs" />
+    <Compile Include="BusinessObjects\tbr_convenio_cliente.cs" />
+    <Compile Include="BusinessObjects\tbr_convenio_finalizadora_sub.cs" />
+    <Compile Include="BusinessObjects\tbr_convenio_un.cs" />
+    <Compile Include="BusinessObjects\tbr_dicionario_produto.cs" />
+    <Compile Include="BusinessObjects\tbr_dicionario_un.cs" />
+    <Compile Include="BusinessObjects\tbr_dpto_aplicativo.cs" />
+    <Compile Include="BusinessObjects\tbr_ecf_finalizadora.cs" />
+    <Compile Include="BusinessObjects\tbr_ecf_tributacao.cs" />
+    <Compile Include="BusinessObjects\tbr_finalizadora_sub_un.cs" />
+    <Compile Include="BusinessObjects\tbr_finalizadora_un.cs" />
+    <Compile Include="BusinessObjects\tbr_mvto_compra_cfop____.cs" />
+    <Compile Include="BusinessObjects\tbr_mvto_compra_dup____.cs" />
+    <Compile Include="BusinessObjects\tbr_parametro_descprod_uneg.cs" />
+    <Compile Include="BusinessObjects\tbr_parametro_descvend_uneg.cs" />
+    <Compile Include="BusinessObjects\tbr_parametro_markup_uneg.cs" />
+    <Compile Include="BusinessObjects\tbr_produto_estoque_dia.cs" />
+    <Compile Include="BusinessObjects\tbr_produto_estoque_lote.cs" />
+    <Compile Include="BusinessObjects\tbr_produto_tributacao.cs" />
+    <Compile Include="BusinessObjects\tbr_produto_uneg.cs" />
+    <Compile Include="BusinessObjects\tbr_promocao_produto.cs" />
+    <Compile Include="BusinessObjects\tbr_promocao_uneg.cs" />
+    <Compile Include="BusinessObjects\tb_abcfarma.cs" />
+    <Compile Include="BusinessObjects\tb_abcfarma_periodo.cs" />
+    <Compile Include="BusinessObjects\tb_abertura_caixa.cs" />
+    <Compile Include="BusinessObjects\tb_agenda_produto.cs" />
+    <Compile Include="BusinessObjects\tb_banco.cs" />
+    <Compile Include="BusinessObjects\tb_cadastro_contador.cs" />
+    <Compile Include="BusinessObjects\tb_cargo.cs" />
+    <Compile Include="BusinessObjects\tb_ceps.cs" />
+    <Compile Include="BusinessObjects\tb_cfop.cs" />
+    <Compile Include="BusinessObjects\tb_checkin.cs" />
+    <Compile Include="BusinessObjects\tb_checkin_item.cs" />
+    <Compile Include="BusinessObjects\tb_checkin_item_tmp.cs" />
+    <Compile Include="BusinessObjects\tb_checkin_tmp.cs" />
+    <Compile Include="BusinessObjects\tb_checkout.cs" />
+    <Compile Include="BusinessObjects\tb_checkout_item.cs" />
+    <Compile Include="BusinessObjects\tb_cliente.cs" />
+    <Compile Include="BusinessObjects\tb_cliente_anvisa.cs" />
+    <Compile Include="BusinessObjects\tb_cliente_bloqueio.cs" />
+    <Compile Include="BusinessObjects\tb_cliente_endereco.cs" />
+    <Compile Include="BusinessObjects\tb_cliente_fiscal.cs" />
+    <Compile Include="BusinessObjects\tb_cliente_telefone.cs" />
+    <Compile Include="BusinessObjects\tb_conselho.cs" />
+    <Compile Include="BusinessObjects\tb_conselho_regional.cs" />
+    <Compile Include="BusinessObjects\tb_conta.cs" />
+    <Compile Include="BusinessObjects\tb_convenio.cs" />
+    <Compile Include="BusinessObjects\tb_crediario.cs" />
+    <Compile Include="BusinessObjects\tb_crediario_finalizadora.cs" />
+    <Compile Include="BusinessObjects\tb_crm.cs" />
+    <Compile Include="BusinessObjects\tb_crm_endereco.cs" />
+    <Compile Include="BusinessObjects\tb_crm_especialidade.cs" />
+    <Compile Include="BusinessObjects\tb_dav.cs" />
+    <Compile Include="BusinessObjects\tb_dav_itens____.cs" />
+    <Compile Include="BusinessObjects\tb_ecf.cs" />
+    <Compile Include="BusinessObjects\tb_ecf_dd.cs" />
+    <Compile Include="BusinessObjects\tb_ecf_modelo.cs" />
+    <Compile Include="BusinessObjects\tb_empresa_privatelabel.cs" />
+    <Compile Include="BusinessObjects\tb_empresa_recarga.cs" />
+    <Compile Include="BusinessObjects\tb_entrega_arearisco.cs" />
+    <Compile Include="BusinessObjects\tb_entrega_endereco.cs" />
+    <Compile Include="BusinessObjects\tb_entrega_polo.cs" />
+    <Compile Include="BusinessObjects\tb_entrega_polo_bairro.cs" />
+    <Compile Include="BusinessObjects\tb_entrega_prod_continuo.cs" />
+    <Compile Include="BusinessObjects\tb_entrega_quadrante.cs" />
+    <Compile Include="BusinessObjects\tb_entrega_rota.cs" />
+    <Compile Include="BusinessObjects\tb_entrega_rota_cep.cs" />
+    <Compile Include="BusinessObjects\tb_finalizadora.cs" />
+    <Compile Include="BusinessObjects\tb_finalizadora_sub.cs" />
+    <Compile Include="BusinessObjects\tb_financeiro_administradora.cs" />
+    <Compile Include="BusinessObjects\tb_financeiro_bancos.cs" />
+    <Compile Include="BusinessObjects\tb_financeiro_evento.cs" />
+    <Compile Include="BusinessObjects\tb_financeiro_prazo.cs" />
+    <Compile Include="BusinessObjects\tb_financeiro_sangria.cs" />
+    <Compile Include="BusinessObjects\tb_financeiro_suprimento.cs" />
+    <Compile Include="BusinessObjects\tb_fornecedor.cs" />
+    <Compile Include="BusinessObjects\tb_fornecedor_divisao.cs" />
+    <Compile Include="BusinessObjects\tb_funcionario.cs" />
+    <Compile Include="BusinessObjects\tb_funcionario_horario.cs" />
+    <Compile Include="BusinessObjects\tb_funcionario_horario_item.cs" />
+    <Compile Include="BusinessObjects\tb_funcionario_visitante.cs" />
+    <Compile Include="BusinessObjects\tb_hist_sangria____.cs" />
+    <Compile Include="BusinessObjects\tb_ibge.cs" />
+    <Compile Include="BusinessObjects\tb_ibpt_ax.cs" />
+    <Compile Include="BusinessObjects\tb_lancto_financeiro.cs" />
+    <Compile Include="BusinessObjects\tb_liquidacao_forma.cs" />
+    <Compile Include="BusinessObjects\tb_liquidacao_motivo.cs" />
+    <Compile Include="BusinessObjects\tb_mvto_compra_dup____.cs" />
+    <Compile Include="BusinessObjects\tb_mvto_compra_item_divergencia____.cs" />
+    <Compile Include="BusinessObjects\tb_mvto_compra_item_lote____.cs" />
+    <Compile Include="BusinessObjects\tb_mvto_compra_item____.cs" />
+    <Compile Include="BusinessObjects\tb_mvto_compra____.cs" />
+    <Compile Include="BusinessObjects\tb_mvto_fin____.cs" />
+    <Compile Include="BusinessObjects\tb_nfe.cs" />
+    <Compile Include="BusinessObjects\tb_nfe_cfop.cs" />
+    <Compile Include="BusinessObjects\tb_nfe_danfe.cs" />
+    <Compile Include="BusinessObjects\tb_nfe_finalizadora.cs" />
+    <Compile Include="BusinessObjects\tb_nfe_item.cs" />
+    <Compile Include="BusinessObjects\tb_paciente_anvisa.cs" />
+    <Compile Include="BusinessObjects\tb_paf_numero.cs" />
+    <Compile Include="BusinessObjects\tb_parametro.cs" />
+    <Compile Include="BusinessObjects\tb_parametro_comissao.cs" />
+    <Compile Include="BusinessObjects\tb_parametro_descconv.cs" />
+    <Compile Include="BusinessObjects\tb_parametro_descmax.cs" />
+    <Compile Include="BusinessObjects\tb_parametro_descprod.cs" />
+    <Compile Include="BusinessObjects\tb_parametro_descvend.cs" />
+    <Compile Include="BusinessObjects\tb_parametro_limpezas.cs" />
+    <Compile Include="BusinessObjects\tb_parametro_markup.cs" />
+    <Compile Include="BusinessObjects\tb_pbm.cs" />
+    <Compile Include="BusinessObjects\tb_pedido_compra_item____.cs" />
+    <Compile Include="BusinessObjects\tb_pedido_compra____.cs" />
+    <Compile Include="BusinessObjects\tb_piscofins.cs" />
+    <Compile Include="BusinessObjects\tb_ponto.cs" />
+    <Compile Include="BusinessObjects\tb_ponto_motivo.cs" />
+    <Compile Include="BusinessObjects\tb_princ_ativo.cs" />
+    <Compile Include="BusinessObjects\tb_privatelabel.cs" />
+    <Compile Include="BusinessObjects\tb_privatelabel_finalizadora.cs" />
+    <Compile Include="BusinessObjects\tb_produto.cs" />
+    <Compile Include="BusinessObjects\tb_produto_barra.cs" />
+    <Compile Include="BusinessObjects\tb_produto_classe.cs" />
+    <Compile Include="BusinessObjects\tb_produto_familia.cs" />
+    <Compile Include="BusinessObjects\tb_produto_fam_categoria.cs" />
+    <Compile Include="BusinessObjects\tb_produto_fam_categ_sub.cs" />
+    <Compile Include="BusinessObjects\tb_produto_fam_grupo.cs" />
+    <Compile Include="BusinessObjects\tb_produto_kit.cs" />
+    <Compile Include="BusinessObjects\tb_produto_linha.cs" />
+    <Compile Include="BusinessObjects\tb_produto_piscofins.cs" />
+    <Compile Include="BusinessObjects\tb_produto_princativo.cs" />
+    <Compile Include="BusinessObjects\tb_produto_receituario.cs" />
+    <Compile Include="BusinessObjects\tb_produto_similaridade.cs" />
+    <Compile Include="BusinessObjects\tb_promocao.cs" />
+    <Compile Include="BusinessObjects\tb_promocao_tipo.cs" />
+    <Compile Include="BusinessObjects\tb_recarga.cs" />
+    <Compile Include="BusinessObjects\tb_recarga_finalizadora.cs" />
+    <Compile Include="BusinessObjects\tb_reducao_z.cs" />
+    <Compile Include="BusinessObjects\tb_reducao_z_itens.cs" />
+    <Compile Include="BusinessObjects\tb_sangrias.cs" />
+    <Compile Include="BusinessObjects\tb_serie_nota.cs" />
+    <Compile Include="BusinessObjects\tb_sincronizacao.cs" />
+    <Compile Include="BusinessObjects\tb_suprimentos.cs" />
+    <Compile Include="BusinessObjects\tb_terminal.cs" />
+    <Compile Include="BusinessObjects\tb_terminal_mobile.cs" />
+    <Compile Include="BusinessObjects\tb_tipo_logradouro.cs" />
+    <Compile Include="BusinessObjects\tb_tipo_mvto_produto.cs" />
+    <Compile Include="BusinessObjects\tb_tipo_nota.cs" />
+    <Compile Include="BusinessObjects\tb_transportadora.cs" />
+    <Compile Include="BusinessObjects\tb_tributacao.cs" />
+    <Compile Include="BusinessObjects\tb_uf.cs" />
+    <Compile Include="BusinessObjects\tb_unid_negocio.cs" />
+    <Compile Include="BusinessObjects\tb_unid_negocio_grupo.cs" />
+    <Compile Include="BusinessObjects\tb_unid_negocio_parametro.cs" />
+    <Compile Include="BusinessObjects\tb_usuario.cs" />
+    <Compile Include="BusinessObjects\tb_usuario_bloqueio.cs" />
+    <Compile Include="BusinessObjects\tb_usuario_dpto.cs" />
+    <Compile Include="BusinessObjects\tb_usuario_funcao.cs" />
+    <Compile Include="BusinessObjects\tb_usuario_grupo.cs" />
+    <Compile Include="BusinessObjects\tb_venda.cs" />
+    <Compile Include="BusinessObjects\tb_venda_dav.cs" />
+    <Compile Include="BusinessObjects\tb_venda_dav_item.cs" />
+    <Compile Include="BusinessObjects\tb_venda_estorno_tef.cs" />
+    <Compile Include="BusinessObjects\tb_venda_item.cs" />
+    <Compile Include="BusinessObjects\tb_venda_pagamento.cs" />
+    <Compile Include="BusinessObjects\tb_venda_prevenda.cs" />
+    <Compile Include="BusinessObjects\tb_venda_prevenda_item.cs" />
+    <Compile Include="BusinessObjects\tb_venda_prevenda_pgto.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Exceptions\ValidationException.cs" />
+    <Compile Include="Interfaces\IValidator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

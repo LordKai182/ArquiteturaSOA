@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08425608-3CBB-4259-BC42-44D47123CE8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiceASA</RootNamespace>
+    <AssemblyName>ServiceASA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=1.0.0.155, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Solution Items\Others\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataTransferObject\tbManagerUpdateDto.cs" />
+    <Compile Include="DataTransferObject\tbr_abcfarma_ufDto.cs" />
+    <Compile Include="DataTransferObject\tbr_convenio_clienteDto.cs" />
+    <Compile Include="DataTransferObject\tbr_convenio_finalizadora_subDto.cs" />
+    <Compile Include="DataTransferObject\tbr_convenio_unDto.cs" />
+    <Compile Include="DataTransferObject\tbr_dicionario_produtoDto.cs" />
+    <Compile Include="DataTransferObject\tbr_dicionario_unDto.cs" />
+    <Compile Include="DataTransferObject\tbr_dpto_aplicativoDto.cs" />
+    <Compile Include="DataTransferObject\tbr_ecf_finalizadoraDto.cs" />
+    <Compile Include="DataTransferObject\tbr_ecf_tributacaoDto.cs" />
+    <Compile Include="DataTransferObject\tbr_finalizadora_sub_unDto.cs" />
+    <Compile Include="DataTransferObject\tbr_finalizadora_unDto.cs" />
+    <Compile Include="DataTransferObject\tbr_mvto_compra_cfop____Dto.cs" />
+    <Compile Include="DataTransferObject\tbr_mvto_compra_dup____Dto.cs" />
+    <Compile Include="DataTransferObject\tbr_parametro_descprod_unegDto.cs" />
+    <Compile Include="DataTransferObject\tbr_parametro_descvend_unegDto.cs" />
+    <Compile Include="DataTransferObject\tbr_parametro_markup_unegDto.cs" />
+    <Compile Include="DataTransferObject\tbr_produto_estoque_diaDto.cs" />
+    <Compile Include="DataTransferObject\tbr_produto_estoque_loteDto.cs" />
+    <Compile Include="DataTransferObject\tbr_produto_tributacaoDto.cs" />
+    <Compile Include="DataTransferObject\tbr_produto_unegDto.cs" />
+    <Compile Include="DataTransferObject\tbr_promocao_produtoDto.cs" />
+    <Compile Include="DataTransferObject\tb_abcfarmaDto.cs" />
+    <Compile Include="DataTransferObject\tb_abcfarma_periodoDto.cs" />
+    <Compile Include="DataTransferObject\tb_abertura_caixaDto.cs" />
+    <Compile Include="DataTransferObject\tb_agenda_produtoDto.cs" />
+    <Compile Include="DataTransferObject\tb_bancoDto.cs" />
+    <Compile Include="DataTransferObject\tb_cadastro_contadorDto.cs" />
+    <Compile Include="DataTransferObject\tb_cargoDto.cs" />
+    <Compile Include="DataTransferObject\tb_cepsDto.cs" />
+    <Compile Include="DataTransferObject\tb_cfopDto.cs" />
+    <Compile Include="DataTransferObject\tb_checkinDto.cs" />
+    <Compile Include="DataTransferObject\tb_checkin_itemDto.cs" />
+    <Compile Include="DataTransferObject\tb_checkin_item_tmpDto.cs" />
+    <Compile Include="DataTransferObject\tb_checkin_tmpDto.cs" />
+    <Compile Include="DataTransferObject\tb_checkoutDto.cs" />
+    <Compile Include="DataTransferObject\tb_checkout_itemDto.cs" />
+    <Compile Include="DataTransferObject\tb_clienteDto.cs" />
+    <Compile Include="DataTransferObject\tb_cliente_anvisaDto.cs" />
+    <Compile Include="DataTransferObject\tb_cliente_bloqueioDto.cs" />
+    <Compile Include="DataTransferObject\tb_cliente_enderecoDto.cs" />
+    <Compile Include="DataTransferObject\tb_cliente_fiscalDto.cs" />
+    <Compile Include="DataTransferObject\tb_cliente_telefoneDto.cs" />
+    <Compile Include="DataTransferObject\tb_conselhoDto.cs" />
+    <Compile Include="DataTransferObject\tb_conselho_regionalDto.cs" />
+    <Compile Include="DataTransferObject\tb_contaDto.cs" />
+    <Compile Include="DataTransferObject\tb_convenioDto.cs" />
+    <Compile Include="DataTransferObject\tb_crediarioDto.cs" />
+    <Compile Include="DataTransferObject\tb_crediario_finalizadoraDto.cs" />
+    <Compile Include="DataTransferObject\tb_crmDto.cs" />
+    <Compile Include="DataTransferObject\tb_crm_enderecoDto.cs" />
+    <Compile Include="DataTransferObject\tb_crm_especialidadeDto.cs" />
+    <Compile Include="DataTransferObject\tb_davDto.cs" />
+    <Compile Include="DataTransferObject\tb_dav_itens____Dto.cs" />
+    <Compile Include="DataTransferObject\tb_ecfDto.cs" />
+    <Compile Include="DataTransferObject\tb_ecf_ddDto.cs" />
+    <Compile Include="DataTransferObject\tb_ecf_modeloDto.cs" />
+    <Compile Include="DataTransferObject\tb_empresa_privatelabelDto.cs" />
+    <Compile Include="DataTransferObject\tb_empresa_recargaDto.cs" />
+    <Compile Include="DataTransferObject\tb_entrega_areariscoDto.cs" />
+    <Compile Include="DataTransferObject\tb_entrega_enderecoDto.cs" />
+    <Compile Include="DataTransferObject\tb_entrega_poloDto.cs" />
+    <Compile Include="DataTransferObject\tb_entrega_polo_bairroDto.cs" />
+    <Compile Include="DataTransferObject\tb_entrega_prod_continuoDto.cs" />
+    <Compile Include="DataTransferObject\tb_entrega_quadranteDto.cs" />
+    <Compile Include="DataTransferObject\tb_entrega_rotaDto.cs" />
+    <Compile Include="DataTransferObject\tb_entrega_rota_cepDto.cs" />
+    <Compile Include="DataTransferObject\tb_finalizadoraDto.cs" />
+    <Compile Include="DataTransferObject\tb_finalizadora_subDto.cs" />
+    <Compile Include="DataTransferObject\tb_financeiro_administradoraDto.cs" />
+    <Compile Include="DataTransferObject\tb_financeiro_bancosDto.cs" />
+    <Compile Include="DataTransferObject\tb_financeiro_eventoDto.cs" />
+    <Compile Include="DataTransferObject\tb_financeiro_prazoDto.cs" />
+    <Compile Include="DataTransferObject\tb_financeiro_sangriaDto.cs" />
+    <Compile Include="DataTransferObject\tb_financeiro_suprimentoDto.cs" />
+    <Compile Include="DataTransferObject\tb_fornecedorDto.cs" />
+    <Compile Include="DataTransferObject\tb_fornecedor_divisaoDto.cs" />
+    <Compile Include="DataTransferObject\tb_funcionarioDto.cs" />
+    <Compile Include="DataTransferObject\tb_funcionario_horarioDto.cs" />
+    <Compile Include="DataTransferObject\tb_funcionario_horario_itemDto.cs" />
+    <Compile Include="DataTransferObject\tb_funcionario_visitanteDto.cs" />
+    <Compile Include="DataTransferObject\tb_hist_sangria____Dto.cs" />
+    <Compile Include="DataTransferObject\tb_ibgeDto.cs" />
+    <Compile Include="DataTransferObject\tb_ibpt_axDto.cs" />
+    <Compile Include="DataTransferObject\tb_lancto_financeiroDto.cs" />
+    <Compile Include="DataTransferObject\tb_liquidacao_formaDto.cs" />
+    <Compile Include="DataTransferObject\tb_liquidacao_motivoDto.cs" />
+    <Compile Include="DataTransferObject\tb_mvto_compra_dup____Dto.cs" />
+    <Compile Include="DataTransferObject\tb_mvto_compra_item_divergencia____Dto.cs" />
+    <Compile Include="DataTransferObject\tb_mvto_compra_item_lote____Dto.cs" />
+    <Compile Include="DataTransferObject\tb_mvto_compra_item____Dto.cs" />
+    <Compile Include="DataTransferObject\tb_mvto_compra____Dto.cs" />
+    <Compile Include="DataTransferObject\tb_mvto_fin____Dto.cs" />
+    <Compile Include="DataTransferObject\tb_nfeDto.cs" />
+    <Compile Include="DataTransferObject\tb_nfe_cfopDto.cs" />
+    <Compile Include="DataTransferObject\tb_nfe_danfeDto.cs" />
+    <Compile Include="DataTransferObject\tb_nfe_finalizadoraDto.cs" />
+    <Compile Include="DataTransferObject\tb_nfe_itemDto.cs" />
+    <Compile Include="DataTransferObject\tb_paciente_anvisaDto.cs" />
+    <Compile Include="DataTransferObject\tb_paf_numeroDto.cs" />
+    <Compile Include="DataTransferObject\tb_parametroDto.cs" />
+    <Compile Include="DataTransferObject\tb_parametro_comissaoDto.cs" />
+    <Compile Include="DataTransferObject\tb_parametro_descconvDto.cs" />
+    <Compile Include="DataTransferObject\tb_parametro_descmaxDto.cs" />
+    <Compile Include="DataTransferObject\tb_parametro_descprodDto.cs" />
+    <Compile Include="DataTransferObject\tb_parametro_descvendDto.cs" />
+    <Compile Include="DataTransferObject\tb_parametro_limpezasDto.cs" />
+    <Compile Include="DataTransferObject\tb_parametro_markupDto.cs" />
+    <Compile Include="DataTransferObject\tb_pbmDto.cs" />
+    <Compile Include="DataTransferObject\tb_pedido_compra_item____Dto.cs" />
+    <Compile Include="DataTransferObject\tb_pedido_compra____Dto.cs" />
+    <Compile Include="DataTransferObject\tb_piscofinsDto.cs" />
+    <Compile Include="DataTransferObject\tb_pontoDto.cs" />
+    <Compile Include="DataTransferObject\tb_ponto_motivoDto.cs" />
+    <Compile Include="DataTransferObject\tb_princ_ativoDto.cs" />
+    <Compile Include="DataTransferObject\tb_privatelabelDto.cs" />
+    <Compile Include="DataTransferObject\tb_privatelabel_finalizadoraDto.cs" />
+    <Compile Include="DataTransferObject\tb_produtoDto.cs" />
+    <Compile Include="DataTransferObject\tb_produto_barraDto.cs" />
+    <Compile Include="DataTransferObject\tb_produto_classeDto.cs" />
+    <Compile Include="DataTransferObject\tb_produto_familiaDto.cs" />
+    <Compile Include="DataTransferObject\tb_produto_fam_categoriaDto.cs" />
+    <Compile Include="DataTransferObject\tb_produto_fam_categ_subDto.cs" />
+    <Compile Include="DataTransferObject\tb_produto_fam_grupoDto.cs" />
+    <Compile Include="DataTransferObject\tb_produto_kitDto.cs" />
+    <Compile Include="DataTransferObject\tb_produto_linhaDto.cs" />
+    <Compile Include="DataTransferObject\tb_produto_piscofinsDto.cs" />
+    <Compile Include="DataTransferObject\tb_produto_princativoDto.cs" />
+    <Compile Include="DataTransferObject\tb_produto_receituarioDto.cs" />
+    <Compile Include="DataTransferObject\tb_produto_similaridadeDto.cs" />
+    <Compile Include="DataTransferObject\tb_promocaoDto.cs" />
+    <Compile Include="DataTransferObject\tb_promocao_tipoDto.cs" />
+    <Compile Include="DataTransferObject\tb_recargaDto.cs" />
+    <Compile Include="DataTransferObject\tb_recarga_finalizadoraDto.cs" />
+    <Compile Include="DataTransferObject\tb_reducao_zDto.cs" />
+    <Compile Include="DataTransferObject\tb_reducao_z_itensDto.cs" />
+    <Compile Include="DataTransferObject\tb_sangriasDto.cs" />
+    <Compile Include="DataTransferObject\tb_serie_notaDto.cs" />
+    <Compile Include="DataTransferObject\tb_sincronizacaoDto.cs" />
+    <Compile Include="DataTransferObject\tb_suprimentosDto.cs" />
+    <Compile Include="DataTransferObject\tb_terminalDto.cs" />
+    <Compile Include="DataTransferObject\tb_terminal_mobileDto.cs" />
+    <Compile Include="DataTransferObject\tb_tipo_logradouroDto.cs" />
+    <Compile Include="DataTransferObject\tb_tipo_mvto_produtoDto.cs" />
+    <Compile Include="DataTransferObject\tb_tipo_notaDto.cs" />
+    <Compile Include="DataTransferObject\tb_transportadoraDto.cs" />
+    <Compile Include="DataTransferObject\tb_tributacaoDto.cs" />
+    <Compile Include="DataTransferObject\tb_ufDto.cs" />
+    <Compile Include="DataTransferObject\tb_unid_negocioDto.cs" />
+    <Compile Include="DataTransferObject\tb_unid_negocio_grupoDto.cs" />
+    <Compile Include="DataTransferObject\tb_unid_negocio_parametroDto.cs" />
+    <Compile Include="DataTransferObject\tb_usuarioDto.cs" />
+    <Compile Include="DataTransferObject\tb_usuario_bloqueioDto.cs" />
+    <Compile Include="DataTransferObject\tb_usuario_dptoDto.cs" />
+    <Compile Include="DataTransferObject\tb_usuario_funcaoDto.cs" />
+    <Compile Include="DataTransferObject\tb_usuario_grupoDto.cs" />
+    <Compile Include="DataTransferObject\tb_vendaDto.cs" />
+    <Compile Include="DataTransferObject\tb_venda_davDto.cs" />
+    <Compile Include="DataTransferObject\tb_venda_dav_itemDto.cs" />
+    <Compile Include="DataTransferObject\tb_venda_estorno_tefDto.cs" />
+    <Compile Include="DataTransferObject\tb_venda_itemDto.cs" />
+    <Compile Include="DataTransferObject\tb_venda_pagamentoDto.cs" />
+    <Compile Include="DataTransferObject\tb_venda_prevendaDto.cs" />
+    <Compile Include="DataTransferObject\tb_venda_prevenda_itemDto.cs" />
+    <Compile Include="DataTransferObject\tb_venda_prevenda_pgtoDto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceContract\Itb_clienteService.cs" />
+    <Compile Include="ServiceImplementation\tb_clienteService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\2. Business Layer\ArquiteturaASABusiness\ArquiteturaASABusiness\ArquiteturaASABusiness.csproj">
+      <Project>{3ddcc673-916f-4f43-97ca-a29df6cf6b55}</Project>
+      <Name>ArquiteturaASABusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\3. Data Layer\ASArquiteruraData\ASArquiteruraData\ASArquiteruraData.csproj">
+      <Project>{6f6d89b9-d85a-465d-b08d-0167882a68a0}</Project>
+      <Name>ASArquiteruraData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
